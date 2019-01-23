@@ -68,15 +68,48 @@
     </section>
 
 
-    <section id="images">
-        <div class="container-fluid text-center modal" id="modal">
+    <section id="modal">
+        <div class="container-fluid text-center modal" >
             <div class="row" style="height:90%">
                 <div class="col-sm-12" style="height:100%">
                     <img src="">
                 </div>
             </div>
+            <div class="row modal-menu">
+                <div class="col-xs-3">
+                    <span class="glyphicon glyphicon-chevron-left" onclick="displayPrevPhoto()">
+                </div>
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-eye-open additionalOption" onclick="openCurrentImageInNewWindow()">
+                </div>
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-remove-circle" onclick="closeModal()">
+                </div>
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-zoom-in additionalOption">
+                </div>
+                <div class="col-xs-3">
+                    <span class="glyphicon glyphicon-chevron-right" onclick="displayNextPhoto()">
+                </div>
+            </div>
         </div>
+    </section>
 
+
+    <section id="imagesContainer">
+        <div class="container-fluid gallery">
+            <div class="flex-container text-center">
+                <div id="1" class="image-box balustr" data-category="balustr" data-index="1">
+                    <img src="Resources/galleryImages/balustrady/1.jpg">
+                </div>
+                <div id="2" class="image-box balustr" data-category="balustr" data-index="2">
+                    <img src="Resources/galleryImages/balustrady/2.jpg">
+                </div>
+                <div id="3" class="image-box balustr" data-category="balustr" data-index="3">
+                    <img src="Resources/galleryImages/balustrady/3.jpg">
+                </div>  
+            </div>
+        </div>
     </section>
     
 
