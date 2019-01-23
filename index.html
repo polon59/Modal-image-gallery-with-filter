@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Images gallery</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <section id="image-filter-menu">
+        <div class="container-fluid filter-buttons">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button onclick="filterSeclection('image-box')" type="button" class="btn btn-primary image-box-button">Wszystko</button>
+                </div>
+                <div class="btn-group">
+                    <button onclick="filterSeclection('balustr')" type="button" class="btn btn-primary balustr-button">Balustrady</button>
+                </div>
+                <div class="btn-group">
+                    <button onclick="filterSeclection('bramy')" type="button" class="btn btn-primary bramy-button">Bramy</button>
+                </div>
+                <div class="btn-group">
+                    <button onclick="filterSeclection('ogrodz')" type="button" class="btn btn-primary ogrodz-button">Ogrodzenia</button>
+                </div>
+                <div class="btn-group">
+                    <button onclick="filterSeclection('autbram')" type="button" class="btn btn-primary autbram-button">Automatyka Bram</button>
+                </div>
+                <div class="btn-group">
+                    <button onclick="filterSeclection('uslspaw')" type="button" class="btn btn-primary uslspaw-button">Usługi spawalnicze</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid filter-buttons-dropdown">
+            <div class="row">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary image-box-button" style="width:80%" onclick="filterSeclection('image-box')">
+                        Wszystko
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" style="width:20%" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <button type="button" onclick="filterSeclection('balustr')" class="btn btn-primary balustr-button">Balustrady</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="filterSeclection('bramy')" class="btn btn-primary bramy-button">Bramy</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="filterSeclection('ogrodz')" class="btn btn-primary ogrodz-button">Ogrodzenia</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="filterSeclection('autbram')"class="btn btn-primary autbram-button">Automatyka Bram</button>
+                        </li>
+                        <li>
+                            <button type="button" onclick="filterSeclection('uslspaw')" class="btn btn-primary uslspaw-button">Usługi spawalnicze</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<footer></footer>
+</html>
