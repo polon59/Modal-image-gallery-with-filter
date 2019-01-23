@@ -1,0 +1,133 @@
+#image-filter-menu button{
+    background-color: rgb(195, 255, 242);
+    border: 1px solid rgb(54, 146, 125);
+    color: rgb(0, 0, 0);
+}
+
+#image-filter-menu button:hover{
+    background-color: rgb(125, 255, 227);
+    border: 1px solid rgb(24, 90, 75);
+    color: rgb(0, 0, 0);
+}
+
+#image-filter-menu .container-fluid{
+    background-color: transparent;
+}
+
+#image-filter-menu .dropdown-menu{
+    padding: 0;
+    background-color: transparent;
+}
+
+.filter-buttons-dropdown{
+    background-color: white;
+    display: none;
+}
+
+.filter-buttons-dropdown .btn-group{
+    width: 100%;
+}
+
+.filter-buttons-dropdown .dropdown-menu{
+    width: 100%;
+}
+
+.filter-buttons-dropdown button{
+    width: 100%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(59, 59, 59, 0.479);
+    justify-content: center;
+  }
+  
+  .flex-container > .image-box {
+    background-color: #f1f1f1;
+    width: 280px;
+    height: 180px;
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container > .image-box img{
+      width: 100%;
+      height: 100%;
+  }
+
+  /* gallery */
+
+  .gallery{
+      user-select: none;
+  }
+
+  #imagesContainer img:hover{
+      cursor: pointer;
+      filter: brightness(130%);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+.modal-menu{
+    background-color: rgba(39, 39, 39, 0.8);
+}
+
+.modal-menu .glyphicon{
+    z-index: 10;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(160, 160, 160);
+}
+
+.modal-menu .glyphicon:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.modal img{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 765px) {
+    .filter-buttons{
+        display: none;
+    }
+
+    .filter-buttons-dropdown{
+        display: block;
+    }
+
+    .flex-container > .image-box{
+        width: 200px;
+        height: 110px;
+        margin: 2px;
+    }
+  }
+
+@media only screen and (max-width: 660px) {
+    .flex-container > .image-box{
+        width: 140px;
+        height: 90px;
+        margin: 2px;
+    }
+}
